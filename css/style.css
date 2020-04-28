@@ -1,0 +1,512 @@
+* {
+    box-sizing: border-box;
+    font-family: Lato;
+}
+
+body {
+    font-size: 95%;
+    margin: 0;
+}
+
+svg {
+    width: 100%;
+    height: auto;
+}
+
+.list-item {
+    width: 2rem;
+    height: auto;
+}
+
+svg #name {
+    fill: white;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#bt {
+    fill: white;
+}
+
+header {
+    background-color: rgb(187, 3, 141);
+    padding-top: .9rem;
+    padding-bottom: .9rem;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: minmax(auto, 50rem) auto;
+    grid-gap: 20px;
+}
+
+nav .brand {
+    max-width: 14rem;
+}
+
+
+/* nav div {
+    background-color: red;
+} */
+
+.nav-right {
+    justify-self: right;
+    display: flex;
+    align-items: center;
+}
+
+.nav-right a {
+    padding-left: 30px;
+}
+
+.nav-right a span {
+    display: block;
+}
+
+.big-size {
+    display: none;
+}
+
+
+/* global */
+
+.container {
+    padding-right: .9rem;
+    padding-left: .9rem;
+}
+
+
+/* ----------------- */
+
+.thumbnail {
+    text-align: center;
+    padding-top: 5rem;
+    color: rgb(59, 59, 59);
+}
+
+.thumbnail img {
+    width: 15rem;
+}
+
+.thumbnail h1 {
+    font-size: 3.5rem;
+    font-weight: normal;
+    line-height: 1.2em;
+}
+
+.thumbnail h2 {
+    font-weight: normal;
+    color: rgb(145, 145, 145);
+}
+
+.button {
+    border: 2px solid black;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: .5rem;
+    margin-top: 1rem;
+}
+
+.section-one {
+    width: 100%;
+    height: 620px;
+    background-image: url("../img/benjamin-voros-U-Kty6HxcQc-unsplash.jpg");
+    padding-top: 3rem;
+    padding-left: 3rem;
+    background-size: cover;
+    /* position: relative; */
+    margin-top: 5rem;
+}
+
+.section-one div {
+    width: 310px;
+    font-size: .6rem;
+    background-color: rgba(0, 0, 0, 0.137);
+    color: white;
+    line-height: 1.7em;
+    letter-spacing: .1em;
+    padding: .3rem 1rem;
+}
+
+.section-one-word {
+    max-width: 987px;
+    margin: 0 auto;
+    margin-top: -150px;
+    text-align: left;
+    background-color: #fff;
+}
+
+.inner-section-one {
+    padding: 50px;
+}
+
+.section-one-word h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.section-one-word h2 {
+    line-height: 1.8em;
+    font-weight: normal;
+}
+
+.news-content {
+    margin-top: 2rem;
+}
+
+.news-content h3 {
+    background-color: rgb(165, 23, 118);
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
+
+.news-content .col-3 {
+    padding: 0 30px;
+}
+
+.news-content .col-3 div::before {
+    content: "";
+    display: block;
+    background-color: rgb(255, 147, 255);
+    padding: 1px 0;
+    margin-bottom: 1.1rem;
+}
+
+.news-content span {
+    letter-spacing: .1rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.news-content h2,
+.news-content p {
+    margin: 0;
+    line-height: 1.5em;
+    margin-bottom: .5rem;
+}
+
+.news-content a {
+    color: blue;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.instruct-1 img {
+    width: 5rem;
+    border-radius: 100%;
+}
+
+.feat {
+    float: left;
+}
+
+.col-3 .col-2 img {
+    float: right;
+}
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.creation-section h1 {
+    font-weight: lighter;
+    margin: 0;
+}
+
+.creation-section p {
+    margin-top: 0;
+    text-align: center;
+}
+
+.creation-section h1 {
+    font-size: 3.5rem;
+}
+
+.creation-section .creation {
+    background-color: rgb(228, 228, 228);
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.creation .creation-head {
+    text-align: center;
+}
+
+.background-creation figure {
+    margin: 0;
+}
+
+figure img {
+    max-width: 100%;
+    /* max-height: 100%; */
+}
+
+.background-creation figure {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.background-creation figure figcaption {
+    position: absolute;
+    bottom: .5rem;
+    color: white;
+    padding: 0 3rem 0 3rem;
+}
+
+.background-creation h2 {
+    line-height: 1.3em;
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgb(139, 131, 131, 0.1), black);
+    position: absolute;
+    display: block;
+}
+
+.collaborate {
+    background-color: white;
+    padding: 1em 3em 2em 3em;
+    font-size: 120%;
+    line-height: 1.5em;
+}
+
+.collaborate .button {
+    border-radius: 0;
+    font-size: 1rem;
+    padding: .5em 3em;
+    margin: 0 auto;
+    display: block;
+}
+
+.section-two {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.section-two img {
+    margin-bottom: 4rem;
+    border-bottom: .4rem solid rgb(55, 0, 117);
+}
+
+.section-two figcaption {
+    font-size: 1.2rem;
+    width: 80%;
+    margin: 1rem auto;
+    color: rgb(58, 58, 58);
+}
+
+.section-two figure {
+    margin-bottom: 5rem;
+}
+
+.section-two h4 {
+    font-weight: normal;
+}
+
+.small-img .bottom-back {
+    width: 100%;
+    height: 10px;
+    bottom: 0;
+    background-color: rgb(109, 109, 114);
+    position: absolute;
+}
+
+.col-sm-2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(15rem, 50%));
+}
+
+.col-sm-2 div {
+    background-color: yellow;
+    /* width: 30rem; */
+    /* max-height: 550px */
+}
+
+.col-sm-2 .rcol {
+    background-image: url(../img/benjamin-voros-U-Kty6HxcQc-unsplash.jpg);
+    background-size: cover;
+}
+
+.col-sm-2 h1 {
+    font-size: 2rem;
+    padding: 5rem 2.5rem;
+}
+
+.col-sm-2 div img {
+    /* width: 100%; */
+}
+
+.section-three {
+    /*  */
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-weight: bold;
+    background-color: rgb(253, 253, 253);
+}
+
+.section-three q {
+    width: 70%;
+    font-size: 3.5rem;
+    display: block;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+}
+
+.section-three p {
+    font-size: .8rem;
+    color: gray;
+}
+
+.section-three .button {
+    border-radius: 0;
+    background-color: rgb(109, 109, 12);
+    border: none;
+    padding: 1rem 6rem;
+    color: #fff;
+    margin-top: 3rem;
+}
+
+footer img {
+    width: 15rem;
+}
+
+footer {
+    background-color: rgb(228, 228, 228);
+    padding: 2rem 0 4rem 1rem;
+}
+
+h5 {
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+footer .grid-3 div {
+    max-width: 304px;
+}
+
+ul {
+    /* margin: 0; */
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin-bottom: .5rem;
+}
+
+footer a {
+    color: black;
+    font-weight: 600;
+}
+
+footer .social a {
+    border: 1px solid black;
+    /* margin: 0; */
+    padding: .5rem 1rem;
+    display: inline-block;
+    margin-left: -4px;
+    max-width: 40px;
+}
+
+footer img {
+    width: 10rem;
+}
+
+@media (min-width:768px) {
+    .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 auto;
+        max-width: 978px;
+    }
+    .col-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 978px;
+        margin: 0 auto;
+    }
+    .inner-footer {
+        width: 100%;
+    }
+    footer div {
+        /* max-width: 100%; */
+        /* padding-right: 20px; */
+        /* padding-left: 20px; */
+    }
+    .section-three q {
+        width: 50%;
+    }
+    .col-sm-2 h1 {
+        padding: 8rem;
+        font-weight: 600;
+    }
+    .section-two {
+        margin-top: 4rem;
+    }
+    .section-two figure {
+        margin: 0;
+    }
+    .section-two {
+        grid-gap: 20px;
+        margin-bottom: 7rem;
+    }
+    .section-two img {
+        margin-bottom: 1rem;
+    }
+    .thumbnail {
+        max-width: 878px;
+        margin: 0 auto;
+        padding: 5rem 0;
+    }
+    .section-one-word {
+        padding: 2rem;
+    }
+    .news-content .col-3 {
+        padding: 0 0;
+    }
+    .news-content .grid-3 {
+        grid-gap: 2rem;
+    }
+    .creation-section .creation {
+        padding: 6em 0;
+    }
+    .creation-head {
+        margin-bottom: 3.2rem;
+        font-size: 150%;
+        line-height: 2.5em;
+    }
+}
+
+@media (min-width:1110px) {
+    nav {
+        padding-left: 30px;
+        padding-right: 30px;
+        grid-template-columns: 1fr 2fr;
+    }
+    nav .small-size {
+        display: none;
+    }
+    .big-size {
+        display: unset;
+    }
+    .section-one-word h1 {
+        font-size: 3.5rem;
+        margin-top: 0;
+    }
+}
